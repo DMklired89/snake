@@ -10,24 +10,20 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            int x1 = 1; 
-            int y1 = 3;
-            char sym1 = '*';  // показать на экране символ "*"
+            Point p1 = new Point();       // экземпляр (объект)  классa Point 
+            p1.x = 1;
+            p1.y = 3;
+            p1.sym = '*';
+            p1.Draw();         // Вывод точки на экран при помощи функции Draw (при таком выводе обязательно
+                               // обознать функцию Draw в классе Point)
 
-            Draw(x1, y1, sym1);
-        
-            int x2 = 4;
-            int y2 = 5;
-            char sym2 = '#';
+            Point p2 = new Point();       // экземпляр (объект)  классa Point 
+            p2.x = 4;
+            p2.y = 5;
+            p2.sym = '#';
+            p2.Draw();
 
-            Draw(x2, y2, sym2);
-
-            Console.ReadLine();
-        }
-        static void Draw(int x, int y, char sym) // функция - вывод точек с координатами x,y на экран
-        {
-            Console.SetCursorPosition(x, y); // показать на экране координаты
-            Console.Write(sym);               // показать на экране символ "*" 
+            Console.ReadLine();   // закрытие консоли при нажатии"Enter"
         }
     }
 }
