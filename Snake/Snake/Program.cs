@@ -14,7 +14,7 @@ namespace Snake
             int y1 = 3;
             char sym1 = '*';  // показать на экране символ "*"
 
-            Draw(x1, y1, sym1);
+            Draw(x1, y1, sym1);  // отобразить на экране при помощи функции Draw
         
             int x2 = 4;
             int y2 = 5;
