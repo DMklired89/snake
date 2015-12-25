@@ -14,17 +14,20 @@ namespace Snake
             int y1 = 3;
             char sym1 = '*';  // показать на экране символ "*"
 
-            Console.SetCursorPosition(x1, y1); // показать на экране координаты
-            Console.Write(sym1);               // показать на экране символ "*"
-
+            Draw(x1, y1, sym1);
+        
             int x2 = 4;
             int y2 = 5;
-            char sym2 = '#';  
+            char sym2 = '#';
 
-            Console.SetCursorPosition(x2, y2); 
-            Console.Write(sym2);               
+            Draw(x2, y2, sym2);
 
             Console.ReadLine();
+        }
+        static void Draw(int x, int y, char sym) // функция - вывод точек с координатами x,y на экран
+        {
+            Console.SetCursorPosition(x, y); // показать на экране координаты
+            Console.Write(sym);               // показать на экране символ "*" 
         }
     }
 }
