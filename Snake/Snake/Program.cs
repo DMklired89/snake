@@ -26,7 +26,7 @@ namespace Snake
         }
         static void Draw(int x, int y, char sym) // функция - вывод точек с координатами x,y на экран
         {
-            Console.SetCursorPosition(x, y); // показать на экране координаты
+            Console.SetCursorPosition(x, y);  // показать на экране координаты
             Console.Write(sym);               // показать на экране символ "*" 
         }
     }
