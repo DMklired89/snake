@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Point  // Создали класс для "точки" на экране
+    class Point            // Создали класс для "точки" на экране
     {
         public int x;      // Логически объединены 
         public int y;      // три переменные
